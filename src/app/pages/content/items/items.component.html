@@ -8,7 +8,10 @@
   <div *ngIf="itemsLoaded">
     <mat-card *ngFor="let item of items" class="my-app-items-card">
       <mat-card-title>{{item.title}}</mat-card-title>
-      <mat-card-subtitle style="color: darkblue;">by <span>{{item.author.firstName}} {{item.author.lastName}}</span></mat-card-subtitle>
+      <mat-card-subtitle style="color: #0a8080;">
+        <span>by {{item.author.firstName}} {{item.author.lastName}} </span>
+        <span>on {{item.createdAt | date: 'yyyy-MM-dd' }}</span>
+      </mat-card-subtitle>
       <mat-card-content>{{item.payload}}</mat-card-content>
     </mat-card>
   </div>
