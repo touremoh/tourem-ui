@@ -1,0 +1,9 @@
+.link-active {
+  background-color: #001e1e;
+}
+
+.mat-list-item:hover {
+  background-color: #001e1e;
+  cursor: pointer;
+  color: whitesmoke;
+}

@@ -1,0 +1,10 @@
+.my-app-items-page {
+  padding: 10px;
+}
+
+.my-app-items-card {
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  width: 50vw;
+}
