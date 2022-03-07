@@ -1,13 +1,14 @@
-<mat-drawer-container class="my-app-container">
-  <mat-drawer mode="side" opened class="my-app-container-side-pane">
-    <div id="my-app-logo">
-      <h1>Tourem's Blog</h1>
-    </div>
-    <div id="my-app-menu">
+<div>
+  <div id="my-app-header">
+    <app-header></app-header>
+  </div>
+  <mat-drawer-container class="my-app-container">
+    <mat-drawer mode="side" opened class="my-app-container-side-pane">
       <app-menu></app-menu>
-    </div>
-  </mat-drawer>
-  <mat-drawer-content class="my-app-container-main-content">
-    <app-main-content></app-main-content>
-  </mat-drawer-content>
-</mat-drawer-container>
+    </mat-drawer>
+    <mat-drawer-content class="my-app-container-main-content">
+      <app-main-content></app-main-content>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
+

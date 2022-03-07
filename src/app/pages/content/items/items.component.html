@@ -1,7 +1,10 @@
 <div class="my-app-items-page">
-  <h1>Latest articles</h1>
 
-  <div *ngIf="!itemsLoaded">
+  <ul class="breadcrumb">
+    <li><a routerLink="/articles">Articles</a></li>
+  </ul>
+
+  <div *ngIf="!itemsLoaded" style="width: 45%; margin: 10% 20%; ">
     <mat-spinner></mat-spinner>
   </div>
 
@@ -12,7 +15,7 @@
         <span>by {{item.author.firstName}} {{item.author.lastName}} </span>
         <span>on {{item.createdAt | date: 'yyyy-MM-dd' }}</span>
       </mat-card-subtitle>
-      <mat-card-content>{{item.payload}}</mat-card-content>
+      <mat-card-content>{{item.payload.substring(0, 399)}} ...</mat-card-content>
     </mat-card>
   </div>
 </div>

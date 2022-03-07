@@ -7,18 +7,15 @@
 }
 
 .my-app-container-side-pane {
-  color: whitesmoke;
-  width: 25%;
-  background-color: #032b2b;
-}
-
-#my-app-logo {
-  width: 100%;
-  padding: 2%;
+  color-rendering: optimizeQuality;
+  color: black;
+  width: 15%;
+  margin: 0;
+  background-color: white;
 }
 
 .my-app-container-main-content {
   width: 100vw;
-  background-color: whitesmoke;
+  background-color: ghostwhite;
   padding: 10px;
 }
