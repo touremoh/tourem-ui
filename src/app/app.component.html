@@ -1,9 +1,9 @@
 <div>
   <div id="my-app-header">
-    <app-header></app-header>
+    <app-header (menuEventEmitter)="onMenuEventReceived($event)"></app-header>
   </div>
   <mat-drawer-container class="my-app-container">
-    <mat-drawer mode="side" opened class="my-app-container-side-pane">
+    <mat-drawer mode="side" [opened]="menuOpened" class="my-app-container-side-pane">
       <app-menu></app-menu>
     </mat-drawer>
     <mat-drawer-content class="my-app-container-main-content">
