@@ -9,8 +9,8 @@ import {AboutComponent} from "./pages/content/about/about.component";
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'articles', component: ItemsComponent },
-  { path: 'articles/:id', component: ItemDetailsComponent },
+  { path: 'notes', component: ItemsComponent },
+  { path: 'notes/:id', component: ItemDetailsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'not-found', component: PageNotFoundComponent },
   { path: '**', redirectTo: 'not-found', pathMatch: 'full' }

@@ -10,7 +10,7 @@ import {Article} from "./model/Article";
 })
 export class AppComponent implements OnInit {
   articles: Article[] | undefined ;
-  menuOpened = false;
+  menuOpened = true;
 
   constructor(private http: HttpClient) {}
 

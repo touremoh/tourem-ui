@@ -1,11 +1,43 @@
 <mat-list role="list">
+  <div mat-subheader style="color: black;">General</div>
   <mat-list-item role="listitem" routerLink="/home" routerLinkActive="link-active">
-    <h3>Home</h3>
-  </mat-list-item>
-  <mat-list-item role="listitem" routerLink="/articles" routerLinkActive="link-active">
-    <h3>Articles</h3>
+    <mat-icon mat-list-icon>bungalow</mat-icon>
+    <div mat-line>Home</div>
   </mat-list-item>
   <mat-list-item role="listitem" routerLink="/about" routerLinkActive="link-active">
-    <h3>Who am I ?</h3>
+    <mat-icon mat-list-icon>perm_identity</mat-icon>
+    <div mat-line>About me</div>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <div mat-subheader style="color: black;">Notes</div>
+  <mat-list-item role="listitem" routerLink="/notes" routerLinkActive="link-active">
+    <mat-icon mat-list-icon>code</mat-icon>
+    <div mat-line>Software Development</div>
+  </mat-list-item>
+  <mat-list-item role="listitem" routerLink="/notes/growth" routerLinkActive="link-active">
+    <mat-icon mat-list-icon>waterfall_chart</mat-icon>
+    <div mat-line>Productivity</div>
+  </mat-list-item>
+  <mat-list-item role="listitem" routerLink="/notes/growth" routerLinkActive="link-active">
+    <mat-icon mat-list-icon>show_chart</mat-icon>
+    <div mat-line>Personal Growth</div>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <div mat-subheader style="color: black;">Books</div>
+  <mat-list-item role="listitem" routerLink="/notes" routerLinkActive="link-active">
+    <mat-icon mat-list-icon>terminal</mat-icon>
+    <div mat-line>Tech</div>
+  </mat-list-item>
+  <mat-list-item role="listitem" routerLink="/notes" routerLinkActive="link-active">
+    <mat-icon mat-list-icon>hub</mat-icon>
+    <div mat-line>Marketing</div>
+  </mat-list-item>
+  <mat-list-item role="listitem" routerLink="/notes" routerLinkActive="link-active">
+    <mat-icon mat-list-icon>insights</mat-icon>
+    <div mat-line>Start ups</div>
   </mat-list-item>
 </mat-list>
